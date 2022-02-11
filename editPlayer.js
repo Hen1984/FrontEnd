@@ -144,7 +144,7 @@ console.log(getParameterByName('id'));
     ];
     
 
-  for (let i = 0; i<=4; i++) {
+  for (let i = 0; i<=3; i++) {
       pos += "<option value='"+positions[i]+"'>" + positions[i] +"</option>";
   }
   selectPosition.innerHTML = pos;
@@ -158,7 +158,7 @@ console.log(getParameterByName('id'));
   let teams = ["NEWPI", "SAN FRANCISCO", "NAUGHTY BOYS", "NEW TEAM"];
 
   for (let i = 0; i<=4; i++) {
-      tm += "<option value= '"+teams[i]+"'>" + teams[i] + "</option>";
+      tm += "<option value='"+teams[i]+"'>" + teams[i] + "</option>";
   }
   selectPosition.innerHTML = pos;
 }
