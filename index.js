@@ -55,7 +55,7 @@ async function fetchPlayers() {
             let li = createNode('li');
             let span = createNode('span');
 	    let a = createNode('a');
-	    a.setAttribute('href', "show.html?id=" + player._id);
+	    a.setAttribute('href', "editPlayer.html?id=" + player._id);
 	    a.innerText = player._id;	
             span.innerHTML = `${player.name} ${player.surname} ${player.age} ${player.img} ${player.position} ${player.team}`;            
             append(li, span);
