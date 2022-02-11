@@ -128,23 +128,24 @@ function getParameterByName(name, url = window.location.href) {
 console.log(getParameterByName('id'));
   fetchProduct(getParameterByName('id'));
 
-  var pos;
-  var selectPosition = document.getElementById("txtPosition");
+  
 
 
   //For Select Postions
 
   function Select (){
-    debugger;
+    var pos;
+  var selectPosition = document.getElementById("txtPosition");
   let positions = [
     "GK",
     "DF",
     "MF",
     "FW"
     ];
+    debugger;
 
   for (let i = 0; i<=4; i++) {
-      pos += "<option>" + positions[i] +"</option>";
+      pos += "<option value='"+positions[i]+"'>" + positions[i] +"</option>";
   }
   selectPosition.innerHTML = pos;
 
