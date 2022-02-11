@@ -50,7 +50,7 @@ async function fetchEditPlayer() {
 	const newPlayer = {name: nameField, surname: surnameField, age: ageField, position: positionField, team: teamField};
 	
     const response = await fetch(
-      "https://full-jeol.herokuapp.com/players/" + idField + "?_method=PUT",
+      "https://full-jeol.herokuapp.com/players" + idField + "?_method=PUT",
       {
         method: "POST",
         headers: {
@@ -72,7 +72,7 @@ async function fetchEditPlayer() {
 
 async function fetchPlayer(id) {
     const response = await fetch(
-      "https://full-jeol.herokuapp.com/players/" + id,
+      "https://full-jeol.herokuapp.com/players" + id,
       {		
         method: "GET",
 		headers: {
