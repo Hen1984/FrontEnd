@@ -46,3 +46,32 @@ async function fetchCreatePlayer() {
       })
       .catch((error) => console.log(error));
   }
+  function Select (){
+    var pos = "";
+  var selectPosition = document.getElementById("txtPosition");
+  let positions = [
+    "GK",
+    "DF",
+    "MF",
+    "FW"
+    ];
+    
+
+  for (let i = 0; i<=3; i++) {
+      pos += "<option value='"+positions[i]+"'>" + positions[i] +"</option>";
+  }
+  selectPosition.innerHTML = pos;
+
+
+//For Select Teams
+  
+  var tm="";
+  var selectTeam = document.getElementById("txtTeam");
+
+  let teams = ["NEWPI", "SAN FRANCISCO", "NAUGHTY BOYS", "NEW TEAM"];
+
+  for (let i = 0; i<=4; i++) {
+      tm += "<option value='"+teams[i]+"'>" + teams[i] + "</option>";
+  }
+  selectTeam.innerHTML = tm;
+}
