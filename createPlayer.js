@@ -64,7 +64,7 @@ async function fetchCreatePlayer() {
 
   let teams = ["NEWPI", "SAN FRANCISCO", "NAUGHTY BOYS", "NEW TEAM"];
 
-  for (let i = 0; i<=4; i++) {
+  for (let i = 0; i<=3; i++) {
       tm += "<option value='"+teams[i]+"'>" + teams[i] + "</option>";
   }
   selectTeam.innerHTML = tm;
