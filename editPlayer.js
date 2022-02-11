@@ -160,5 +160,5 @@ console.log(getParameterByName('id'));
   for (let i = 0; i<=4; i++) {
       tm += "<option value='"+teams[i]+"'>" + teams[i] + "</option>";
   }
-  selectPosition.innerHTML = pos;
+  selectTeam.innerHTML = tm;
 }
