@@ -16,29 +16,27 @@ async function fetchCreatePlayer() {
   const teamField = document.getElementById("txtTeam").value;
 	
 	
-	const newPlayer = {name: nameField, surname: surnameField, age:ageField, img : "", position: positionField, team: teamField};
-	
-    const response = await fetch(
-
-
-      "https://full-jeol.herokuapp.com/players",
-      {
-
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json"
-        },
-		body: JSON.stringify(newPlayer)
-      }
-    )
-      .then((res) => res.json(console.log(res)))
-      .then((data) => {
-        console.log("data." + data);
-       
-        
-      })
-      .catch((error) => console.log(error));
+	const newPlayer = {name: nameField, surname: surnameField, age:ageField, position: positionField, team: teamField};
+	debugger;
+  const response = await fetch(
+    "https://full-jeol.herokuapp.com/players",
+  //"http://192.168.1.115:3000/players_api",
+    {				
+      method: "POST",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': "application/json"
+      },
+  body: JSON.stringify(newPlayer)
+    }
+  )
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      
+      
+    })
+    .catch((error) => console.log(error));
   }
   function Select (){
     var pos = "";
