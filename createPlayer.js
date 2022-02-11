@@ -13,8 +13,6 @@ async function fetchCreatePlayer() {
 
 	const ageField = document.getElementById("txtAge").value;
 
-  const imgField = document.getElementById("txtImg").value;
-
   const positionField = document.getElementById("txtPosition").value;
 
   const teamField = document.getElementById("txtTeam").value;
