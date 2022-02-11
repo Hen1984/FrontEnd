@@ -16,7 +16,7 @@ async function fetchDeletePlayer() {
 	const newPlayer = {name: nameField, surname: surnameField, age: ageField, position: positionField, team: teamField};
 	
     const response = await fetch(
-        "https://full-jeol.herokuapp.com/players/" + idField + "?_method=DELETE",
+        "https://full-jeol.herokuapp.com/players" + idField + "?_method=DELETE",
       {
         method: "POST",
         headers: {
@@ -64,6 +64,7 @@ async function fetchEditPlayer() {
       .then((data) => {
         console.log(data);
         alert("Player Edited");
+        window.location.href = "index.html";
         
       })
       .catch((error) => console.log(error));
@@ -84,7 +85,7 @@ async function fetchPlayer(id) {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-	let player = data;
+	let player = data.player;
 	
 	 try {
 		 
