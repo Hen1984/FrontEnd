@@ -126,7 +126,7 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 console.log(getParameterByName('id'));
-  fetchProduct(getParameterByName('id'));
+  fetchPlayer(getParameterByName('id'));
 
   
 
