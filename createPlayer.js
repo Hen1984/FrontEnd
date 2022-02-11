@@ -69,3 +69,5 @@ async function fetchCreatePlayer() {
   }
   selectTeam.innerHTML = tm;
 }
+
+Select();
