@@ -48,9 +48,10 @@ async function fetchPlayers() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        console.log(data.players);
+        console.log(data.Array);
+        console.log("hola");
         const ul = document.getElementById('players');
-        let players = data.players;
+        let players = data;
         
         for(let player of players){
             let li = createNode('li');
