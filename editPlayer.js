@@ -158,7 +158,7 @@ console.log(getParameterByName('id'));
   let teams = ["NEWPI", "SAN FRANCISCO", "NAUGHTY BOYS", "NEW TEAM"];
 
   for (let i = 0; i<=4; i++) {
-      tm += "<option>" + teams[i] +"</option>";
+      tm += "<option value= '"+teams[i]+"'>" + teams[i] + "</option>";
   }
   selectPosition.innerHTML = pos;
 }
