@@ -32,12 +32,10 @@ async function fetchCreatePlayer() {
 		body: JSON.stringify(newPlayer)
       }
     )
-      .then((res) => res.json())
+      .then((res) => res.json(console.log(res)))
       .then((data) => {
-        console.log(data);
-        const span = document.getElementById('playerSpan');
-        let player = data;
-	span.innerHTML = `${player._id} ${player.name} ${player.surname} ${player.age} ${player.position} ${player.team}`;             
+        console.log("data." + data);
+       
         
       })
       .catch((error) => console.log(error));
