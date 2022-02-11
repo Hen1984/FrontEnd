@@ -142,7 +142,7 @@ console.log(getParameterByName('id'));
     "MF",
     "FW"
     ];
-    debugger;
+    
 
   for (let i = 0; i<=4; i++) {
       pos += "<option value='"+positions[i]+"'>" + positions[i] +"</option>";
