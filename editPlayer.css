@@ -7,7 +7,12 @@ body{
 .main{
     text-align: center;
     width: 300px;
-    margin-left: 400px;
+    margin-left: 700px;
+}
+.title{
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .label{
@@ -19,5 +24,16 @@ body{
 }
 .btn{
     background-color:  indigo;
+    color: white;
     margin: 10px;
+    height: 80px;
+    width: 140px;
+}
+.btn2{
+    background-color:  indigo;
+    color: white;
+    margin: 10px;
+    height: 80px;
+    width: 140px;
+
 }

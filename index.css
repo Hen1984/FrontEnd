@@ -11,6 +11,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
+.item{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:medium;
+    list-style: none;
+}
 .title{
     background-color: black;
     color: white;
