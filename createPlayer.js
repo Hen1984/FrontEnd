@@ -5,8 +5,6 @@ btnNew.addEventListener("click",fetchCreatePlayer);
 
 
 async function fetchCreatePlayer() {
-  debugger;
-
 	const nameField = document.getElementById("txtName").value;
 
 	const surnameField = document.getElementById("txtSurname").value;
@@ -18,7 +16,7 @@ async function fetchCreatePlayer() {
   const teamField = document.getElementById("txtTeam").value;
 	
 	
-	const newPlayer = {name: nameField, surname: surnameField, age:ageField, position: positionField, team: teamField};
+	const newPlayer = {name: nameField, surname: surnameField, age:ageField, img : "", position: positionField, team: teamField};
 	
     const response = await fetch(
 
