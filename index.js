@@ -48,6 +48,7 @@ async function fetchPlayers() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        console.log(data.players);
         const ul = document.getElementById('players');
         let players = data.players;
         
