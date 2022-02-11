@@ -5,6 +5,7 @@ btnNew.addEventListener("click",fetchCreatePlayer);
 
 
 async function fetchCreatePlayer() {
+  debugger;
 
 	const nameField = document.getElementById("txtName").value;
 
