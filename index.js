@@ -36,7 +36,7 @@ async function fetchCreatePlayer() {
 
 async function fetchPlayers() {
     const response = await fetch(
-      "https://rest-atlas-test.herokuapp.com/players_api",
+      "https://full-jeol.herokuapp.com/players",
       {		
         method: "GET",
 		headers: {
