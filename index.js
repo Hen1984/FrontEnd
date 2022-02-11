@@ -66,3 +66,4 @@ async function fetchPlayers() {
       })
       .catch((error) => console.log(error));
   }
+  fetchPlayers();
