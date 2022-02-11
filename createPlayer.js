@@ -18,7 +18,7 @@ async function fetchCreatePlayer() {
   const teamField = document.getElementById("txtTeam").value;
 	
 	
-	const newPlayer = {name: nameField, surname: surnameField, age:ageField, img:imgField, position: positionField, team: teamField};
+	const newPlayer = {name: nameField, surname: surnameField, age:ageField, position: positionField, team: teamField};
 	
     const response = await fetch(
 
@@ -39,7 +39,7 @@ async function fetchCreatePlayer() {
         console.log(data);
         const span = document.getElementById('playerSpan');
         let player = data;
-	span.innerHTML = `${player._id} ${player.name} ${player.surname} ${player.age} ${player.img} ${player.position} ${player.team}`;             
+	span.innerHTML = `${player._id} ${player.name} ${player.surname} ${player.age} ${player.position} ${player.team}`;             
         
       })
       .catch((error) => console.log(error));
