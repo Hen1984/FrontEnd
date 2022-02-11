@@ -134,7 +134,7 @@ console.log(getParameterByName('id'));
   //For Select Postions
 
   function Select (){
-    var pos;
+    var pos = "";
   var selectPosition = document.getElementById("txtPosition");
   let positions = [
     "GK",
