@@ -134,7 +134,8 @@ console.log(getParameterByName('id'));
 
   //For Select Postions
 
-
+  function Select (){
+    debugger;
   let positions = [
     "GK",
     "DF",
@@ -149,8 +150,8 @@ console.log(getParameterByName('id'));
 
 
 //For Select Teams
-
-  var tm;
+  
+  var tm="";
   var selectTeam = document.getElementById("txtTeam");
 
   let teams = ["NEWPI", "SAN FRANCISCO", "NAUGHTY BOYS", "NEW TEAM"];
@@ -159,3 +160,4 @@ console.log(getParameterByName('id'));
       tm += "<option>" + teams[i] +"</option>";
   }
   selectPosition.innerHTML = pos;
+}
